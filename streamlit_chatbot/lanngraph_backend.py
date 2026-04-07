@@ -44,5 +44,27 @@ graph.add_edge("chat_node", END)
 
 config1 = {"configurable": {"thread_id": "1"}}
 chatbot = graph.compile(checkpointer=checkpointer)
+
+# stream =chatbot.stream({
+#     "messages":[HumanMessage(content= "what is the recipes to make pasta")]
+# },config = config1,stream_mode = 'messages')
+
+
+# for message_chunk , metadata in chatbot.stream(
+#     {'messages':[HumanMessage(content="what is the recipe to make pasta")]},
+#     config = config1,
+#     stream_mode='messages'
+# ):
+#     if message_chunk.content:
+#         print(message_chunk.content,end=" ",flush=True)
+
+
+
+
+
+
+
+
+
 # response = chatbot.invoke({"messages":"How are you?"},config = config1)
 # print(response['messages'][-1])

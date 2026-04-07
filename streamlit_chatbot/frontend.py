@@ -19,7 +19,6 @@ from langchain_core.messages import SystemMessage, HumanMessage
 #       st.text(user_input)  
 
 
-
 if 'message_history' not in st.session_state:
     st.session_state['message_history'] = []
 
